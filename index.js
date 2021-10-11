@@ -1,8 +1,8 @@
-const { error } = require("console");
 const Discord = require("discord.js");
 const fs = require("fs");
 
 const client = new Discord.Client();
+const {token} = require('./secrets/token.json')
 client.dialog = require("./memory/dialog.json");
 client.keywords = require("./memory/keywords.json");
 client.analisis = require("./memory/analisis.json");
@@ -119,4 +119,4 @@ client.on("message", (message) => {
   );
 });
 
-client.login("ODc5NzkxMjEyMDUwMTQ1MzEw.YSU3ag.OD24yDZL89uJsy1Kq8Jstk9uxtc");
+client.login(token);
