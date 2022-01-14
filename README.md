@@ -1,2 +1,2 @@
 # neomind
- bot criado para o tcc da escola
+Learner bot lol
